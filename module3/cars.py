@@ -4,7 +4,7 @@
 import json
 import locale
 import sys
-from reports
+import reports
 import emails
 
 
@@ -50,9 +50,8 @@ def process_data(data):
       format_car(max_revenue["car"]), max_revenue["revenue"]),
     "The {} had the most sales:{}".format(
         max_sales["car"]["car_model"], max_sales["total_sales"]),
-    "The most popular year was {} with {} sales.".format(max(most_sales_car, key=most_sales_car.get), max(most_sales_car.va$
-  ]
-
+    "The most popular year was {} with {} sales.".format(max(most_sales_car, key=most_sales_car.get), max(most_sales_car.values()))
+   ]
   return summary
 
 
