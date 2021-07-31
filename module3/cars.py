@@ -1,4 +1,4 @@
-
+# Do no forget to make necessary changes
 #!/usr/bin/env python3
 
 import json
@@ -77,7 +77,7 @@ def main(argv):
 
   # TODO: send the PDF report as an email attachment
   email_summary='\n'.join(summary)
-  my_email=emails.generate("automation@example.com", "student-02-520402092386@example.com", "Sales summary for last month"$
+  my_email=emails.generate("automation@example.com", "<username>@example.com", "Sales summary for last month"$
   emails.send(my_email)
 
 if __name__ == "__main__":
