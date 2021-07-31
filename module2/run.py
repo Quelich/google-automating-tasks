@@ -18,5 +18,5 @@ for file in os.listdir(dir):
         for line in txt:
             param[content[x]] = line.rstrip('\n')
             x += 1
-    response = requests.post(url, json=param)
+    response = requests.post(url, data=param)
     response.raise_for_status()
