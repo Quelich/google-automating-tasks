@@ -3,10 +3,11 @@
 import os
 import requests
 import json
-# List all .txt files under /data/feedback
+
 dir = "/data/feedback/"
 url = "http://<ip address>/feedback/"
 
+# List all .txt files under /data/feedback
 # print(os.listdir(dir))
 
 for file in os.listdir(dir):
