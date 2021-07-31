@@ -11,7 +11,7 @@ for infile in glob.glob("ic_*"):
     file, ext = os.path.splitext(infile)
     # Open the file
     img = Image.open(infile)
-    # Rotate the
+    # Rotate the image
     img.rotate(270)
     # Resize the image from 192x192 to 128x128
     img_resized = img.resize(size)
