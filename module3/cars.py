@@ -77,7 +77,7 @@ def main(argv):
 
   # TODO: send the PDF report as an email attachment
   email_summary='\n'.join(summary)
-  my_email=emails.generate("automation@example.com", "<username>@example.com", "Sales summary for last month"$
+  my_email=emails.generate("automation@example.com", "<username>@example.com", "Sales summary for last month", email_summary, "/tmp/cars.pdf")
   emails.send(my_email)
 
 if __name__ == "__main__":
