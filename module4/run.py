@@ -3,11 +3,11 @@ import os
 import requests
 
 
-content = ["name", "weight", "description", "image_name"]
-desc_path = "./supplier-data/descriptions/"
-img_path = "./supplier-data/images/"
-url = "http://34.122.107.43/fruits/"
 
+desc_path = "./supplier-data/descriptions/"
+url = "http://<external_ip_address>/fruits/"
+
+content = ["name", "weight", "description", "image_name"]
 for file in os.listdir("./supplier-data/descriptions/"):
     fruits = {}
     with open(desc_path + "/" + file) as desc_file:
